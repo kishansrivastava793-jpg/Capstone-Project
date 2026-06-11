@@ -65,3 +65,14 @@ aws dynamodb create-table \
   --region us-east-1
 ```
 
+
+
+## Create zip for Lambda
+
+```bash
+cd backend/process-uploaded-file
+zip -r lambda.zip .
+
+cd ../generate-presigned-url
+zip -r lambda.zip .
+```
