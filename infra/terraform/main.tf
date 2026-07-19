@@ -3,7 +3,7 @@ terraform {
 
 #   Remote Backend
   backend "s3" {
-    bucket         = "devops-accelerator-platform-tf-state-sonam"
+    bucket         = "devops-accelerator-platform-tf-state-kishan"
     key            = "global/devops-accelerator/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "devops-accelerator-tf-locker" #locking
