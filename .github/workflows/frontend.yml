@@ -40,8 +40,6 @@ jobs:
             --function-name ${{ env.LAMBDA_FUNCTION_NAME }} \
             --zip-file fileb://backend/process-uploaded-file/lambda.zip
 
-Pratyush Raja
-11:44 PM
 name: Deploy Frontend to S3 and Invalidate CloudFront
 
 on:
