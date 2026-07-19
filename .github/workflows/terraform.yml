@@ -6,7 +6,7 @@ on:
       - "infra/**"
     branches:
       - main
-
+ 
 env:
   AWS_REGION: us-east-1
   TF_VAR_upload_bucket_name: ${{ secrets.UPLOAD_BUCKET_NAME }}
