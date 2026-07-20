@@ -349,7 +349,7 @@ resource "aws_cloudwatch_log_group" "apigw_logs" {
 resource "aws_apigatewayv2_stage" "presign_stage" {
   api_id      = aws_apigatewayv2_api.presign_api.id
   name        = "$default"
-  auto_deploy = true
+  auto_deploy = false
 
   default_route_settings {
     data_trace_enabled = true
