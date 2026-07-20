@@ -323,7 +323,7 @@ resource "aws_apigatewayv2_api" "presign_api" {
     allow_origins = ["*"]
     allow_methods = ["OPTIONS", "POST"]
     allow_headers = ["*"]
-    max_age = [300]
+    max_age = 300
   }
 }
 # Attach api to lambda
