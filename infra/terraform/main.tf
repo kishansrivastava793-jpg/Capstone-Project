@@ -71,17 +71,7 @@ resource "aws_s3_bucket_policy" "frontend_bucket_policy" {
 }
 
 # CORS (optional, for presigned uploads / APIs)
-resource "aws_s3_bucket_cors_configuration" "frontend_cors" {
-  bucket = aws_s3_bucket.frontend_bucket.id
 
-  cors_rule {
-    allowed_headers = ["*"]
-    allowed_methods = ["GET", "PUT", "HEAD"]
-    allowed_origins = ["https://${aws_cloudfront_distribution.frontend_distribution.domain_name}"]
-    expose_headers  = []
-    max_age_seconds = 3000
-  }
-}
 
 # CloudFront Distribution
 resource "aws_cloudfront_distribution" "frontend_distribution" {
