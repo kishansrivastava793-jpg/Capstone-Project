@@ -353,6 +353,8 @@ resource "aws_apigatewayv2_stage" "presign_stage" {
 
   default_route_settings {
     data_trace_enabled = true
+    throttling_burst_limit = 100
+    throttling_rate_limit  = 50
   }
 
   access_log_settings {
